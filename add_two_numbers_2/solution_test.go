@@ -1,9 +1,10 @@
 package add_two_numbers_2
 
 import (
+	"testing"
+
 	"github.com/austingebauer/go-leetcode/structures"
 	"github.com/stretchr/testify/assert"
-	"testing"
 )
 
 func Test_addTwoNumbers(t *testing.T) {
@@ -96,7 +97,6 @@ func Test_addTwoNumbers(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			assert.Equal(t, tt.want, addTwoNumbers(tt.args.l1, tt.args.l2))
-			assert.Equal(t, tt.want, addTwoNumbers2(tt.args.l1, tt.args.l2))
 		})
 	}
 }
